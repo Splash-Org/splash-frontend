@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;500&family=Mitr&family=Rajdhani:wght@300;400;500;600&family=Rubik:wght@300;400;500;700;800;900&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Mitr', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
