@@ -33,7 +33,7 @@ export default function lens() {
               <div className='grid grid-cols-[3vw,5.8vw,62vw]'>
                   <div className='border-r-4 h-full w-full border-black'></div>
                   <div className='border-r-4 h-full w-full border-black bg-[#]'></div>
-                  <div className='flex text-center items-center pl-10 text-[4rem] font-Rubik font-semibold   bg-gradient-to-r from-[#CCFCFF] to-[#DDA7FC]'>STREAMING ... 20% </div>
+                  <div className='flex text-center items-center pl-10 text-[4rem] font-Rubik font-semibold   bg-gradient-to-r from-[#CCFCFF] to-[#DDA7FC]'>STREAMING ... 90% </div>
               </div>
             </div>
             <div className='grid grid-rows-[26vw,7vw,7vw]'>

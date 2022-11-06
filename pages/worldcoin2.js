@@ -40,7 +40,7 @@ export default function worldcoin2() {
                 <div className="h-full w-full border-r-4 border-black"></div>
                 <div className="h-full w-full border-r-4 border-black bg-[#]"></div>
                 <div className="flex items-center bg-gradient-to-r from-[#CCFCFF] to-[#DDA7FC] pl-10 text-center   font-Rubik text-[4rem] font-semibold">
-                  STREAMING ... 20%{" "}
+                  STREAMING ... 30%{" "}
                 </div>
               </div>
             </div>
