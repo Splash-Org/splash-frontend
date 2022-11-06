@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router'
 import Navigation from "./components/Navigation";
 
-export default function polygon1() {
+export default function upload() {
 
   const router = useRouter();
 
