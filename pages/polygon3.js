@@ -8,7 +8,7 @@ export default function polygon3() {
 
   return (
    <div className='w-[100vw] h-[58vw] flex bg-gradient-to-b from-deep-blue via-md1-blue  to-orange-pink p-16 font-mplus font-extrabold text-3xl text-gray-800 '>
-    <head>Splash / Watch to Invest</head>
+    <Head>Splash / Watch to Invest</Head>
     <div className="w-full grid grid-rows-[8.5vw,30vw] border-[10px] p-0 bg-white border-black  rounded">
           <div className='border-[2px]  border-black grid grid-cols-9'>
             <div onClick={() => router.push("/")} className='col-span-1 border-black border-r-4 border-l-0 bg-white h-full text-center cursor-pointer' style={{
@@ -44,12 +44,12 @@ export default function polygon3() {
               </div>
             </div>
             <div className='grid grid-rows-[26vw,7vw,7vw]'>
-            <div className="border-b-4 border-black relative">
+            <div className="border-b-4 border-black relative pb-7">
               <div
-                className="h-full border-r-4 border-l-0 border-black bg-white text-center"
+                className="h-full  bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
-                  backgroundSize: "130%",
+                  background: "url(/static/polygon3.png) center",
+                  backgroundSize: "90%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                 }}

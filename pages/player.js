@@ -28,13 +28,13 @@ export default function polygon1() {
              
              
             </div>
-            <div className="grid grid-rows-[17vw,17vw,7vw] space-y-10">
+            <div className="grid grid-rows-[17vw,17vw,7vw] space-y-3">
             <div className="relative p-10">
               <div
-                className="h-full border-r-4 border-l-0 border-black bg-white text-center"
+                className="h-full border-4  border-gray-700  bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
-                  backgroundSize: "130%",
+                  background: "url(/static/livepeer.png) center",
+                  backgroundSize: "90%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                 }}
@@ -48,10 +48,10 @@ export default function polygon1() {
       
             <div className=" relative p-10">
               <div
-                className="h-full border-r-4 border-l-0 border-black bg-white text-center"
+                className="h-full border-4  border-gray-700  bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
-                  backgroundSize: "130%",
+                  background: "url(/static/ipfs.png) center",
+                  backgroundSize: "90%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                 }}
@@ -62,7 +62,7 @@ export default function polygon1() {
                 
               </div>
             </div>
-              <div onClick={() => router.push("/list")} className="flex items-center justify-center border-b-4 border-black bg-[#4173CF] text-center text-[2.5rem] hover:text-white  cursor-pointer">
+              <div onClick={() => router.push("/list")} className="flex items-center justify-center border-t-4 border-black bg-[#4173CF] text-center text-[2.5rem] hover:text-white  cursor-pointer">
                 LIST <span className="pl-4 text-[3.5rem]">→</span>
               </div>
             </div>

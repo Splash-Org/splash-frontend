@@ -59,10 +59,10 @@ export default function polygon1() {
               <div
                 className="h-full border-r-4 border-l-0 border-black bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
-                  backgroundSize: "130%",
+                  background: "url(/static/polygon1.png) top",
+                  backgroundSize: "110%",
                   backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
+                  backgroundPosition: "top",
                 }}
               >
                 <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">

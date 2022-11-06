@@ -49,21 +49,21 @@ export default function worldcoin2() {
               <div
                 className="h-full border-r-4 border-l-0 border-black bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
+                  background: "url(/static/world1.png) center",
                   backgroundSize: "130%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                 }}
               >
                 <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
-                  SPONSOR BY Worldcoin{" "}
+                  SPONSOR BY WORLDCOIN{" "}
                 </div>
                 <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
                   BECOME A SPONSOR
                 </div>
               </div>
             </div>
-              <div className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]">
+              <div onClick={() => router.push("/polygon1")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]  hover:text-white hover:bg-[#ffd6d3] cursor-progress">
                 NEXT <span className="pl-4 text-[3.5rem]">→</span>
               </div>
               <div className="flex items-center justify-center text-center">

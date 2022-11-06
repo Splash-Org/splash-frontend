@@ -56,16 +56,16 @@ export default function polygon1() {
               <div
                 className="h-full border-r-4 border-l-0 border-black bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
-                  backgroundSize: "130%",
+                  background: "url(/static/polygon2.png) center",
+                  backgroundSize: "110%",
                   backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
+                  backgroundPosition: "top",
                 }}
               >
-                <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                <div className="absolute bottom-[5vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
                   SPONSOR BY Polygon{" "}
                 </div>
-                <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
+                <div onClick={() => router.push("/sponsor")} className="relative top-[21.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
                   BECOME A SPONSOR
                 </div>
               </div>
