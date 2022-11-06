@@ -1,4 +1,4 @@
-import ContractAbiJson from "./indexer/abis/VideoContract.json";
+import ContractAbiJson from "../indexer/abis/VideoContract.json";
 import { ethers } from "ethers";
 
 export default function getContract() {

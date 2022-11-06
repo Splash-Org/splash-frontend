@@ -13,6 +13,13 @@ import {
   studioProvider,
 } from "@livepeer/react";
 
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+
+const apolloClient = new ApolloClient({
+  uri: "https://api.thegraph.com/subgraphs/name/dilbo139/splash-video-upload",
+  cache: new InMemoryCache(),
+});
+
 const livepeerClient = createReactClient({
   provider: studioProvider({
     apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY,
@@ -60,18 +67,20 @@ const wagmiClient = createClient({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider
-        chains={chains}
-        modalSize="compact"
-        coolMode
-        initialChain={chain.polygonMumbai}
-      >
-        <LivepeerConfig client={livepeerClient}>
-          <Component {...pageProps} />
-        </LivepeerConfig>
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <ApolloProvider client={apolloClient}>
+      <WagmiConfig client={wagmiClient}>
+        <RainbowKitProvider
+          chains={chains}
+          modalSize="compact"
+          coolMode
+          initialChain={chain.polygonMumbai}
+        >
+          <LivepeerConfig client={livepeerClient}>
+            <Component {...pageProps} />
+          </LivepeerConfig>
+        </RainbowKitProvider>
+      </WagmiConfig>
+    </ApolloProvider>
   );
 }
 
