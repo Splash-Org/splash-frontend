@@ -1,6 +1,10 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function polygon3() {
+
+  const router = useRouter();
+
   return (
    <div className='w-[100vw] h-[58vw] flex bg-gradient-to-b from-deep-blue via-md1-blue  to-orange-pink p-16 font-mplus font-extrabold text-3xl text-gray-800 '>
     <head>Splash / Watch to Invest</head>
@@ -64,7 +68,7 @@ export default function polygon3() {
                 <div className='relative top-[22.8vw] bg-[#EAD762] text-gray-800 pt-1 pb-1 '>BECOME A SPONSOR</div>
             </div>
               </div>
-              <div className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-[2.5rem]'>NEXT <span className='text-[3.5rem] pl-4'>→</span></div>
+              <div onClick={() => router.push("/lens")} className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-[2.5rem] cursor-pointer'>NEXT <span className='text-[3.5rem] pl-4'>→</span></div>
               <div className='flex text-center items-center justify-center'>TeamⓒThirdWaves</div>
             </div>
           </div>

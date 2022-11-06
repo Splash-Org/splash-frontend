@@ -82,7 +82,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div onClick={() => router.push("/worldcoin1")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center hover:text-white hover:bg-[#ffd6d3]">
+            <div onClick={() => router.push("/worldcoin1")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center hover:text-white hover:bg-[#ffd6d3] cursor-pointer">
               CREATE ACCOUNT
             </div>
             <div className="flex items-center justify-center text-center">

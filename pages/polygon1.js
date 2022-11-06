@@ -1,6 +1,10 @@
 import Head from "next/head";
+import { useRouter } from 'next/router'
 
 export default function polygon1() {
+
+  const router = useRouter();
+
   return (
     <>
       <Head>Splash / Watch to Invest</Head>
@@ -38,20 +42,23 @@ export default function polygon1() {
             <div className="grid h-full w-full grid-rows-[33vw,7.8vw] border-r-4 border-black">
               <div className="grid w-full grid-rows-2 border-b-4 border-black text-[2.5rem]">
                 <div className="flex items-center pl-20 font-mplus">
-                  Open your Polygon ID Wallet and Scan QR code.
+                  Choose your traits to verify by PolygonID.
                 </div>
-                <div className="mt-[-2vw] flex-col space-y-5">
-                  <div className="flex items-center pl-[25vw] text-[2rem]">
+                <div className="flex-col space-y-10">
+                  <div className="flex items-center pl-[20vw]">
+                    <input
+                      type="checkbox"
+                      class="mr-6 h-6 w-6 rounded-full accent-green-900 "
+                    />{" "}
                     AGE (Required Over 18 +)
                   </div>
-                  <div
-                    className="m-auto h-[10vw] w-[10vw] bg-white "
-                    style={{
-                      background: "url(/static/age_qr.png) center",
-                      backgroundSize: "contain",
-                      backgroundRepeat: "no-repeat",
-                    }}
-                  ></div>
+                  <div className="flex items-center pl-[20vw]">
+                    <input
+                      type="checkbox"
+                      class="mr-6 h-6 w-6 rounded-full accent-green-900 "
+                    />{" "}
+                    DAO Reputation
+                  </div>
                 </div>
               </div>
               <div className="grid grid-cols-[3vw,5.8vw,62vw]">
@@ -81,7 +88,7 @@ export default function polygon1() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]">
+              <div onClick={() => router.push("/polygon2")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]  hover:text-white hover:bg-[#ffd6d3] cursor-progress>
                 NEXT <span className="pl-4 text-[3.5rem]">→</span>
               </div>
               <div className="flex items-center justify-center text-center">
