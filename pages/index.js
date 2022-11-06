@@ -1,7 +1,11 @@
 import Head from "next/head";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useRouter } from 'next/router'
 
 export default function Home() {
+
+  const router = useRouter();
+
   return (
     <div className="flex h-[58vw] w-[100vw] bg-gradient-to-b from-deep-blue via-md1-blue  to-orange-pink p-16 font-mplus text-3xl font-extrabold text-gray-800 ">
       <Head>Splash / Watch to Invest</Head>
@@ -78,7 +82,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center">
+            <div onClick={() => router.push("/worldcoin1")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center">
               CREATE ACCOUNT
             </div>
             <div className="flex items-center justify-center text-center">
