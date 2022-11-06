@@ -1,12 +1,16 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function lens() {
+  const router = useRouter();
+  
   return (
    <div className='w-[100vw] h-[58vw] flex bg-gradient-to-b from-deep-blue via-md1-blue  to-orange-pink p-16 font-mplus font-extrabold text-3xl text-gray-800 '>
     <head>Splash / Watch to Invest</head>
     <div className="w-full grid grid-rows-[8.5vw,30vw] border-[10px] p-0 bg-white border-black  rounded">
           <div className='border-[2px]  border-black grid grid-cols-9'>
-            <div className='col-span-1 border-black border-r-4 border-l-0 bg-white h-full text-center' style={{
+            <div onClick={() => router.push("/")}
+            className='col-span-1 border-black border-r-4 border-l-0 bg-white h-full text-center cursor-pointer' style={{
                   background: 'url(/static/logo.png) center',
                   backgroundSize: '95%',
                   backgroundRepeat: 'no-repeat',

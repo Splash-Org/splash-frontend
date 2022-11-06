@@ -10,9 +10,9 @@ export default function Home() {
     <div className="flex h-[58vw] w-[100vw] bg-gradient-to-b from-deep-blue via-md1-blue  to-orange-pink p-16 font-mplus text-3xl font-extrabold text-gray-800 ">
       <Head>Splash / Watch to Invest</Head>
       <div className="grid w-full grid-rows-[8.5vw,30vw] rounded border-[10px] border-black bg-white  p-0">
-        <div className="grid  grid-cols-9 border-[2px] border-black">
-          <div
-            className="col-span-1 h-full border-r-4 border-l-0 border-black bg-white text-center"
+        <div className="grid  grid-cols-9 border-[2px] border-black cursor-pointer">
+          <div onClick={() => router.push("/")}
+            className="col-span-1 h-full border-r-4 border-l-0 border-black bg-white text-center "
             style={{
               background: "url(/static/logo.png) center",
               backgroundSize: "95%",
