@@ -7,6 +7,18 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
+import {
+  LivepeerConfig,
+  createReactClient,
+  studioProvider,
+} from "@livepeer/react";
+
+const livepeerClient = createReactClient({
+  provider: studioProvider({
+    apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY,
+  }),
+});
+
 const { chains, provider, webSocketProvider } = configureChains(
   [
     chain.mainnet,
@@ -55,7 +67,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         coolMode
         initialChain={chain.polygonMumbai}
       >
-        <Component {...pageProps} />
+        <LivepeerConfig client={livepeerClient}>
+          <Component {...pageProps} />
+        </LivepeerConfig>
       </RainbowKitProvider>
     </WagmiConfig>
   );
