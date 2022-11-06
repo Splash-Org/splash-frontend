@@ -48,8 +48,8 @@ export default function defi_sponsor() {
               </div>
               <div className="grid grid-rows-2">
                 <div className="flex flex-col items-center justify-center space-y-10">
-                <div className="text-[1.8rem] pl-10">Total Amount You Staking APR : <span className="text-[#0076BA] ">5.70 %</span></div>
-                <div className="text-[1.8rem] pl-10">Total Balance Staking : $  3575.78 <span className="text-[#0076BA] ">USDCx</span></div>
+                <div className="text-[1.8rem] pl-10">Total User Views : <span className="text-[#0076BA] ">140k</span> viewers</div>
+                <div className="text-[1.8rem] pl-10">Total Clicked Links : <span className="text-[#0076BA] ">50k</span> clicked</div>
                 </div>
                 <div className="flex justify-center items-center space-x-5">
                   <div className="border-2 border-gray-700 p-2 bg-[#CFEBDF] rounded">UPLOAD ADs</div>
