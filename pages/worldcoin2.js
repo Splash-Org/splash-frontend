@@ -56,7 +56,7 @@ export default function worldcoin2() {
                 }}
               >
                 <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
-                  SPONSOR BY WORLDCOIN{" "}
+                  AD SPONSOR BY WORLDCOIN{" "}
                 </div>
                 <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
                   BECOME A SPONSOR

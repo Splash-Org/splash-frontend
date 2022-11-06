@@ -28,8 +28,8 @@ export default function polygon1() {
              
              
             </div>
-            <div className="grid grid-rows-[17vw,17vw,7vw] space-y-3">
-            <div className="relative p-10">
+            <div className="grid grid-rows-[19vw,17vw,7vw] mt-[-2vw]">
+            <div className="relative p-20">
               <div
                 className="h-full border-4  border-gray-700  bg-white text-center"
                 style={{
@@ -39,14 +39,21 @@ export default function polygon1() {
                   backgroundPosition: "center",
                 }}
               >
-                <div className="absolute bottom-[3vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                <div className="absolute bottom-[5vw] bg-[#E86C66] pr-2 pl-2 text-[0.7rem] text-yellow-50">
                   SPONSOR BY LIVEPEER{" "}
                 </div>
-      
+              </div>
+              <div className="flex flex-col">
+                <div className="text-[1.1rem]">How to use Livepeer ?</div>
+                <div className="flex space-x-10">
+                  <div className="text-[0.7rem]">joymun.eth</div>
+                  <div className="text-[0.7rem] border-green-600 border-2 rounded-xl ml-5 pl-1 pr-1">Follow +</div>
+                </div>
+                <div className="text-[0.8rem] ">1.6K views 4 months ago</div>
               </div>
             </div>
       
-            <div className=" relative p-10">
+            <div className=" relative p-20 ">
               <div
                 className="h-full border-4  border-gray-700  bg-white text-center"
                 style={{
@@ -56,8 +63,15 @@ export default function polygon1() {
                   backgroundPosition: "center",
                 }}
               >
-                <div className="absolute bottom-[3vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                <div className="absolute bottom-[5vw] bg-[#E86C66] pr-2 pl-2 text-[0.7rem] text-yellow-50">
                   SPONSOR BY IPFS{" "}
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="text-[1.1rem]">How to save file?</div>
+                <div className="flex space-x-10">
+                  <div className="text-[0.7rem]">swapneel.eth</div>
+                  <div className="text-[0.7rem] border-green-600 border-2 rounded-xl ml-5 pl-1 pr-1">Follow +</div>
                 </div>
                 
               </div>

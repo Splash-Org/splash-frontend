@@ -39,17 +39,17 @@ export default function lens() {
             <div className='grid grid-rows-[26vw,7vw,7vw]'>
               <div className='border-b-4 border-black'>
               <div className='border-black border-r-4 border-l-0 bg-white h-full text-center' style={{
-                  background: 'url(/static/ad.png) center',
-                  backgroundSize: '130%',
+                  background: 'url(/static/lens.png) center',
+                  backgroundSize: '100%',
                   backgroundRepeat: 'no-repeat',
-                  backgroundPosition:'center'
+                  backgroundPosition:'top'
                 }}>
-                <div className='fixed bottom-[23vw] bg-[#E86C66] text-yellow-50 text-[1rem] pr-2 pl-2'>SPONSOR BY Lens Protocol</div>
-                <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white  ">
+                <div className='fixed bottom-[20vw] bg-[#E86C66] text-yellow-50 text-[1rem] pr-2 pl-2'>AD SPONSOR BY Lens Protocol</div>
+                <div onClick={() => router.push("/sponsor")} className="relative top-[22.4vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white  ">
                   BECOME A SPONSOR</div>
             </div>
               </div>
-              <div onClick={() => router.push("/")} className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-[2.5rem] hover:text-white hover:bg-[#ffd6d3] cursor-pointer'>HOME <span className='text-[3.5rem] pl-4  '>→</span></div>
+              <div onClick={() => router.push("/list")} className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-[2.5rem] hover:text-white hover:bg-[#ffd6d3] cursor-pointer'>HOME <span className='text-[3.5rem] pl-4  '>→</span></div>
               <div className='flex text-center items-center justify-center'>TeamⓒThirdWaves</div>
             </div>
           </div>

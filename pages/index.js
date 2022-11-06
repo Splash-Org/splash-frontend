@@ -60,7 +60,7 @@ export default function Home() {
                 }}
               >
                 <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
-                  SPONSOR BY PUSH Notification{" "}
+                  AD SPONSOR BY PUSH Notification{" "}
                 </div>
                 <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white ">
                   BECOME A SPONSOR
