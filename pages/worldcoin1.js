@@ -48,7 +48,7 @@ export default function worldcoin1() {
               <div
                 className="h-full border-r-4 border-l-0 border-black bg-white text-center"
                 style={{
-                  background: "url(/static/ad.png) center",
+                  background: "url(/static/world1.png) center",
                   backgroundSize: "130%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",

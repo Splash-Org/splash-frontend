@@ -45,7 +45,7 @@ export default function lens() {
                   backgroundPosition:'center'
                 }}>
                 <div className='fixed bottom-[23vw] bg-[#E86C66] text-yellow-50 text-[1rem] pr-2 pl-2'>SPONSOR BY Lens Protocol</div>
-                <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
+                <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white  ">
                   BECOME A SPONSOR</div>
             </div>
               </div>

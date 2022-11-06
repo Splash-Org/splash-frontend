@@ -28,8 +28,8 @@ export default function polygon1() {
              
              
             </div>
-            <div className="grid grid-rows-[17vw,17vw,7vw] space-y-10">
-            <div className="relative p-10">
+            <div className="grid grid-rows-[27vw,7vw,7vw]">
+            <div className="border-b-4 border-black relative">
               <div
                 className="h-full border-r-4 border-l-0 border-black bg-white text-center"
                 style={{
@@ -39,31 +39,19 @@ export default function polygon1() {
                   backgroundPosition: "center",
                 }}
               >
-                <div className="absolute bottom-[3vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
-                  SPONSOR BY LIVEPEER{" "}
+                <div className="absolute bottom-[5vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                  SPONSOR BY Polygon{" "}
                 </div>
-      
+                <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
+                  BECOME A SPONSOR
+                </div>
               </div>
             </div>
-      
-            <div className=" relative p-10">
-              <div
-                className="h-full border-r-4 border-l-0 border-black bg-white text-center"
-                style={{
-                  background: "url(/static/ad.png) center",
-                  backgroundSize: "130%",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                }}
-              >
-                <div className="absolute bottom-[3vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
-                  SPONSOR BY IPFS{" "}
-                </div>
-                
+              <div onClick={() => router.push("/")} className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem] hover:text-white hover:bg-[#ffd6d3] cursor-pointer">
+                HOME <span className="pl-4 text-[3.5rem]">→</span>
               </div>
-            </div>
               <div onClick={() => router.push("/list")} className="flex items-center justify-center border-b-4 border-black bg-[#4173CF] text-center text-[2.5rem] hover:text-white  cursor-pointer">
-                LIST <span className="pl-4 text-[3.5rem]">→</span>
+                UPLOAD <span className="pl-4 text-[3.5rem]">→</span>
               </div>
             </div>
           </div>
