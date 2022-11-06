@@ -83,12 +83,12 @@ export default function polygon1() {
                   <div className="fixed bottom-[23vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
                     SPONSOR BY Filecoin{" "}
                   </div>
-                  <div className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 ">
+                  <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
                     BECOME A SPONSOR
                   </div>
                 </div>
               </div>
-              <div onClick={() => router.push("/polygon2")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]  hover:text-white hover:bg-[#ffd6d3] cursor-progress>
+              <div onClick={() => router.push("/polygon2")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]  hover:text-white hover:bg-[#ffd6d3] cursor-progress">
                 NEXT <span className="pl-4 text-[3.5rem]">→</span>
               </div>
               <div className="flex items-center justify-center text-center">
