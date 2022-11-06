@@ -41,7 +41,7 @@ export default function Home() {
             <div className="grid w-full grid-rows-2 border-b-4 border-black p-5 pl-7">
               <div className="flex items-end pb-2 text-[3rem]">HELLO</div>
               <div className="flex pt-10">
-                <div className="pr-4 font-Rubik text-[11.6rem] text-[#4173CF]">
+                <div className="pr-4 pt-[4vw] font-Rubik text-[11.6rem] text-[#4173CF]">
                   SPLASH
                 </div>
                 <div className="flex-col space-y-4 pt-3 text-[1.5rem] font-bold ">
