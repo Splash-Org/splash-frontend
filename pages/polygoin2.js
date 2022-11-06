@@ -34,7 +34,7 @@ export default function polygon1() {
             <div className='border-r-4 h-full w-full border-black grid grid-rows-[33vw,7.8vw]'>
               <div className='border-b-4 border-black grid grid-rows-2 w-full text-[2.5rem]'>
                   <div className='flex font-mplus items-center pl-20'>Open your Polygon ID Wallet and Scan QR code.</div>
-                  <div className='flex-col space-y-5'>
+                  <div className='flex-col space-y-5 mt-[-2vw]'>
                     <div className='flex pl-[25vw] items-center text-[2rem]'>
                       AGE (Required Over 18 +)
                     </div>    
