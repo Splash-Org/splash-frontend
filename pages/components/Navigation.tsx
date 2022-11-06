@@ -1,15 +1,18 @@
 import React from "react";
-import Link from "next/link";
+import { useRouter } from 'next/router'
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Navigation = () => {
+
+  const router = useRouter();
   return (
     <>
       <div className="col-span-6  border-black ">
         <div className="flex h-full w-full  items-center justify-evenly  ">
-          <Link href="/">Home</Link>
-          <Link href="/watch">Watch</Link>
-          <Link href="/upload">Upload</Link>
+          <div onClick={() => router.push("/")}>Home</div>
+          <div onClick={() => router.push("/list")}>Watch</div>
+          <div onClick={() => router.push("/upload")}>Upload</div>
+          <div onClick={() => router.push("/defi")}>DeFi</div> 
           {/* <div>Favorites</div>
           <div>History</div>
           <div>DeFi</div> */}

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Navigation from './components/Navigation';
 
 export default function polygon3() {
 
@@ -18,21 +19,7 @@ export default function polygon3() {
                 }}>
               
             </div>
-            <div className='col-span-6  border-black '>
-              <div className='flex justify-evenly items-center  w-full h-full  '>
-                <div>Home</div>
-                <div>Subscriptions</div>
-                <div>Trends</div>
-                <div>Favorites</div>
-                <div>History</div>
-                <div>DeFi</div>
-              </div>
-            </div>
-            <div className='col-span-2 w-full h-full flex'>
-              <div className='flex w-full m-auto justify-center'>
-                <button className='bg-[#CFEBDF] p-5 border-2 border-gray-800 rounded'>CONNECT WALLET</button>
-              </div>
-            </div>
+            <Navigation />
           </div>
           <div className='border-[2px] border-black border-b-0 border-l-0 grid grid-cols-[71vw,20.5vw]'>
             <div className='border-r-4 h-full w-full border-black grid grid-rows-[33vw,7.8vw]'>
@@ -57,18 +44,24 @@ export default function polygon3() {
               </div>
             </div>
             <div className='grid grid-rows-[26vw,7vw,7vw]'>
-              <div className='border-b-4 border-black'>
-              <div className='border-black border-r-4 border-l-0 bg-white h-full text-center' style={{
-                  background: 'url(/static/ad.png) center',
-                  backgroundSize: '130%',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition:'center'
-                }}>
-                <div className='fixed bottom-[23vw] bg-[#E86C66] text-yellow-50 text-[1rem] pr-2 pl-2'>SPONSOR BY Filecoin </div>
+            <div className="border-b-4 border-black relative">
+              <div
+                className="h-full border-r-4 border-l-0 border-black bg-white text-center"
+                style={{
+                  background: "url(/static/ad.png) center",
+                  backgroundSize: "130%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                  SPONSOR BY Polygon{" "}
+                </div>
                 <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
-                  BECOME A SPONSOR</div>
-            </div>
+                  BECOME A SPONSOR
+                </div>
               </div>
+            </div>
               <div onClick={() => router.push("/lens")} className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-[2.5rem] cursor-pointer'>NEXT <span className='text-[3.5rem] pl-4'>→</span></div>
               <div className='flex text-center items-center justify-center'>TeamⓒThirdWaves</div>
             </div>

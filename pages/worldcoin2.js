@@ -1,5 +1,7 @@
 import Head from "next/head";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import Navigation from "./components/Navigation";
+
 
 export default function worldcoin2() {
 
@@ -21,23 +23,7 @@ export default function worldcoin2() {
                 backgroundPosition: "center",
               }}
             ></div>
-            <div className="col-span-6  border-black ">
-              <div className="flex h-full w-full  items-center justify-evenly  ">
-                <div>Home</div>
-                <div>Subscriptions</div>
-                <div>Trends</div>
-                <div>Favorites</div>
-                <div>History</div>
-                <div>DeFi</div>
-              </div>
-            </div>
-            <div className="col-span-2 flex h-full w-full">
-              <div className="m-auto flex w-full justify-center">
-                <button className="rounded border-2 border-gray-800 bg-[#CFEBDF] p-5">
-                  CONNECT WALLET
-                </button>
-              </div>
-            </div>
+            <Navigation />
           </div>
           <div className="grid grid-cols-[71vw,20.5vw] border-[2px] border-b-0 border-l-0 border-black">
             <div className="grid h-full w-full grid-rows-[33vw,7.8vw] border-r-4 border-black">
@@ -59,24 +45,24 @@ export default function worldcoin2() {
               </div>
             </div>
             <div className="grid grid-rows-[26vw,7vw,7vw]">
-              <div className="border-b-4 border-black">
-                <div
-                  className="h-full border-r-4 border-l-0 border-black bg-white text-center"
-                  style={{
-                    background: "url(/static/ad.png) center",
-                    backgroundSize: "130%",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <div className="fixed bottom-[23vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
-                    SPONSOR BY Filecoin{" "}
-                  </div>
-                  <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
-                    BECOME A SPONSOR
-                  </div>
+            <div className="border-b-4 border-black relative">
+              <div
+                className="h-full border-r-4 border-l-0 border-black bg-white text-center"
+                style={{
+                  background: "url(/static/ad.png) center",
+                  backgroundSize: "130%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                  SPONSOR BY Worldcoin{" "}
+                </div>
+                <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
+                  BECOME A SPONSOR
                 </div>
               </div>
+            </div>
               <div className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]">
                 NEXT <span className="pl-4 text-[3.5rem]">→</span>
               </div>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useRouter } from 'next/router'
+import Navigation from "./components/Navigation" 
 
 export default function Home() {
 
@@ -20,25 +21,9 @@ export default function Home() {
               backgroundPosition: "center",
             }}
           ></div>
-          <div className="col-span-6  border-black ">
-            <div className="flex h-full w-full  items-center justify-evenly  ">
-              <div>Home</div>
-              <div>Subscriptions</div>
-              <div>Trends</div>
-              <div>Favorites</div>
-              <div>History</div>
-              <div>DeFi</div>
-            </div>
-          </div>
-          <div className="col-span-2 flex h-full w-full">
-            <div className="m-auto flex w-full justify-center">
-              {/* <button className="rounded border-2 border-gray-800 bg-[#CFEBDF] p-5">
-                CONNECT WALLET
-              </button> */}
+       
+          <Navigation />
 
-              <ConnectButton label="Connect Wallet" />
-            </div>
-          </div>
         </div>
         <div className="grid grid-cols-[71vw,20.5vw] border-[2px] border-b-0 border-l-0 border-black">
           <div className="grid h-full w-full grid-rows-[33vw,7.8vw] border-r-4 border-black">
@@ -64,7 +49,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-rows-[26vw,7vw,7vw]">
-            <div className="border-b-4 border-black">
+            <div className="border-b-4 border-black relative">
               <div
                 className="h-full border-r-4 border-l-0 border-black bg-white text-center"
                 style={{
@@ -74,7 +59,7 @@ export default function Home() {
                   backgroundPosition: "center",
                 }}
               >
-                <div className="fixed bottom-[23vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
+                <div className="absolute bottom-[4vw] bg-[#E86C66] pr-2 pl-2 text-[1rem] text-yellow-50">
                   SPONSOR BY Filecoin{" "}
                 </div>
                 <div onClick={() => router.push("/sponsor")} className="relative top-[22.8vw] bg-[#EAD762] pt-1 pb-1 text-gray-800 cursor-pointer hover:text-white hover:bg-[#bfea62] ">
