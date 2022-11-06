@@ -62,8 +62,8 @@ export default function worldcoin1() {
                 </div>
               </div>
             </div>
-              <div className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center">
-                CREATE ACCOUNT
+              <div onClick={() => router.push("/worldcoin2")} className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center hover:text-white  text-[2.5rem] cursor-pointer">
+              NEXT <span className="pl-4 text-[3.5rem]">→</span>
               </div>
               <div className="flex items-center justify-center text-center">
                 TeamⓒThirdWaves

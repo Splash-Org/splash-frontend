@@ -63,7 +63,7 @@ export default function worldcoin2() {
                 </div>
               </div>
             </div>
-              <div onClick={() => router.push("/polygon1")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]  hover:text-white hover:bg-[#ffd6d3] cursor-progress">
+              <div onClick={() => router.push("/polygon1")}  className="flex items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-center text-[2.5rem]  hover:text-white  cursor-pointer">
                 NEXT <span className="pl-4 text-[3.5rem]">→</span>
               </div>
               <div className="flex items-center justify-center text-center">
