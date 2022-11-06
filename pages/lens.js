@@ -25,9 +25,9 @@ export default function lens() {
             <div className='border-r-4 h-full w-full border-black grid grid-rows-[33vw,7.8vw]'>
               <div className='border-b-4 border-black grid grid-rows-2 w-full text-[2.5rem]'>
                   <div className='flex font-mplus items-center pl-20'>Please Choose Your Login Method.</div>
-                  <div className='flex-col items-center space-y-5 mt-[-2vw] pl-20 text-[2rem] justify-center'>   
-                   <div>CONNECT LENS</div>
-                   <div>CONNECT ENS</div>
+                  <div className='flex items-center space-x-10 mt-[-2vw] pl-20 text-[2rem] justify-center'>   
+                  <div onClick={() => router.push("/list")} className="rounded border-2 border-gray-800 bg-[#F0CCCC] p-5 cursor-pointer">CONNECT LENS</div>
+                  <div onClick={() => router.push("/list")} className="rounded border-2 border-gray-800 bg-[#F0CCCC] p-5 cursor-pointer">CONNECT ENS</div>
                   </div>        
               </div>
               <div className='grid grid-cols-[3vw,5.8vw,62vw]'>
