@@ -23,10 +23,10 @@ export default function list() {
             ></div>
             <div className="col-span-6  border-black ">
               <div className="flex h-full w-full  items-center justify-evenly  ">
-              <div onClick={() => router.push("/")}>Home</div>
-               <div onClick={() => router.push("/list")}>Watch</div>
-              <div onClick={() => router.push("/upload")}>Upload</div>
-             <div onClick={() => router.push("/defi")}>DeFi</div> 
+              <div className="ursor-pointer"  onClick={() => router.push("/")}>Home</div>
+               <div className="ursor-pointer"  onClick={() => router.push("/list")}>Watch</div>
+              <div className="ursor-pointer"  onClick={() => router.push("/upload")}>Upload</div>
+             <div className="ursor-pointer"  onClick={() => router.push("/defi_user")}>DeFi</div> 
 
               </div>
             </div>
