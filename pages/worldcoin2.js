@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function worldcoin2() {
   return (
    <div className='w-[100vw] h-[58vw] flex bg-gradient-to-b from-deep-blue via-md1-blue  to-orange-pink p-16 font-mplus font-extrabold text-3xl text-gray-800 '>
     <head>Splash / Watch to Invest</head>
@@ -32,21 +32,17 @@ export default function Home() {
           </div>
           <div className='border-[2px] border-black border-b-0 border-l-0 grid grid-cols-[71vw,20.5vw]'>
             <div className='border-r-4 h-full w-full border-black grid grid-rows-[33vw,7.8vw]'>
-              <div className='border-b-4 border-black grid grid-rows-2 w-full p-5 pl-7'>
-                <div className='flex items-end pb-2 text-[3rem]'>HELLO</div>
-                <div className='flex pt-10'>
-                  <div className='text-[11.6rem] pr-4 font-Rubik text-[#4173CF]'>SPLASH</div>
-                  <div className='flex-col space-y-4 text-[1.5rem] pt-3 font-bold '>
-                    <div>INVEST MONEY WHAT YOU WATCH</div>
-                    <div>CHOOSE YOUR PRIVACY</div>
-                    <div>EARN MORE MONEY BY DEFI</div>
-                  </div>
-                </div>
+              <div className='border-b-4 border-black grid grid-rows-2 w-full text-[2.5rem]'>
+                  <div className='flex font-mplus items-center pl-20'>Check Your Worldcoin Result.</div>
+                  <div className='flex justify-center h-[6.5vw]'>
+                    <div className='pr-[2.5vw] text-[3rem] text-[#E86C66]'>✔</div>
+                    <div>You are successfully verified as Human.</div>
+                  </div>          
               </div>
               <div className='grid grid-cols-[3vw,5.8vw,62vw]'>
                   <div className='border-r-4 h-full w-full border-black'></div>
                   <div className='border-r-4 h-full w-full border-black bg-[#]'></div>
-                  <div className='flex text-center items-center pl-10 text-[4rem] font-Rubik font-semibold   bg-gradient-to-r from-[#CCFCFF] to-[#DDA7FC]'>STREAMING ... TO ... YOU </div>
+                  <div className='flex text-center items-center pl-10 text-[4rem] font-Rubik font-semibold   bg-gradient-to-r from-[#CCFCFF] to-[#DDA7FC]'>STREAMING ... 20% </div>
               </div>
             </div>
             <div className='grid grid-rows-[26vw,7vw,7vw]'>
@@ -61,7 +57,7 @@ export default function Home() {
                 <div className='relative top-[22.8vw] bg-[#EAD762] text-gray-800 pt-1 pb-1 '>BECOME A SPONSOR</div>
             </div>
               </div>
-              <div className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3]'>CREATE ACCOUNT</div>
+              <div className='flex text-center items-center justify-center border-b-4 border-black bg-[#FFE3D3] text-[2.5rem]'>NEXT <span className='text-[3.5rem] pl-4'>→</span></div>
               <div className='flex text-center items-center justify-center'>TeamⓒThirdWaves</div>
             </div>
           </div>
